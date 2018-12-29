@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="897.0" prefWidth="1290.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.AdministrationController">
+   <children>
+      <Pane layoutX="113.0" prefHeight="92.0" prefWidth="1192.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#8d8d8d" height="8.86" radius="3.9299999999999997" spread="0.11" width="8.86" />
+         </effect>
+         <children>
+            <Pane fx:id="btnLogout" layoutX="1089.0" layoutY="5.0" onMouseClicked="#logout" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="48.0" text="LogOut" textFill="#797979">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="29.0" layoutY="7.0">
+                     <image>
+                        <Image url="@../img/icons8_Logout_Rounded_Down_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="897.0" prefWidth="110.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#8d8d8d" height="8.86" radius="3.9299999999999997" spread="0.11" width="8.86" />
+         </effect>
+         <children>
+            <Pane fx:id="btnHomePane" layoutX="13.0" layoutY="89.0" onMouseClicked="#homeClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="19.0" layoutY="55.0" text="Home" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="25.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../img/icons8_Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnFoodPane" layoutX="11.0" layoutY="197.0" onMouseClicked="#FoodOnClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="55.0" text="Food" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="25.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../img/icons8_Food_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnReceptionClick" layoutX="13.0" layoutY="290.0" onMouseClicked="#receptionOnClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="5.0" layoutY="55.0" text="Reception" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="26.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../img/icons8_Front_Desk_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnChefPane" layoutX="13.0" layoutY="408.0" onMouseClicked="#chefOnMouceClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="55.0" text="Chef" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="22.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../img/icons8_Chef_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnReportPane" layoutX="11.0" layoutY="757.0" onMouseClicked="#reportOnClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="18.0" layoutY="48.0" text="Report" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="27.0" layoutY="6.0">
+                     <image>
+                        <Image url="@../img/icons8_Doughnut_Chart_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnCustomerPane" layoutX="13.0" layoutY="522.0" onMouseClicked="#customerOnClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="55.0" text="Customer" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="26.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../img/icons8_Customer_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="btnDeliverPane" layoutX="11.0" layoutY="641.0" onMouseClicked="#deliverOnClick" prefHeight="82.0" prefWidth="89.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="55.0" text="Deliver" textFill="#0d0d0d">
+                     <font>
+                        <Font name="OpenSymbol" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="27.0" layoutY="9.0">
+                     <image>
+                        <Image url="@../img/icons8_Waiter_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootPane" layoutX="114.0" layoutY="92.0" prefHeight="786.0" prefWidth="1192.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="500.0" layoutY="500.0" onMouseClicked="#reportOnClick" prefHeight="238.0" prefWidth="192.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="34.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Combo_Chart_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="169.0" text="Report" textFill="#140bdb">
+                     <font>
+                        <Font name="OpenSymbol" size="22.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="27.0" layoutY="500.0" onMouseClicked="#deliverOnClick" prefHeight="238.0" prefWidth="192.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="34.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Delivery_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="170.0" text="Deliver" textFill="#140bdb">
+                     <font>
+                        <Font name="OpenSymbol" size="22.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="246.0" layoutY="500.0" onMouseClicked="#orderStatus" prefHeight="238.0" prefWidth="192.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="34.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_View_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="170.0" text="View Orders" textFill="#140bdb">
+                     <font>
+                        <Font name="OpenSymbol" size="22.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="974.0" layoutY="500.0" onMouseClicked="#chefOnMouceClick" prefHeight="238.0" prefWidth="192.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="33.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Chef_96px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="74.0" layoutY="174.0" text="Chef" textFill="#140bdb">
+                     <font>
+                        <Font name="OpenSymbol" size="22.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane prefHeight="446.0" prefWidth="1192.0">
+               <children>
+                  <ImageView fitHeight="448.0" fitWidth="1192.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../img/craft-slide.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label accessibleRole="BUTTON" alignment="CENTER" cache="true" cacheHint="QUALITY" layoutX="278.0" layoutY="28.0" prefHeight="43.0" prefWidth="636.0" text="Elite Family Restaurant" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+                     <font>
+                        <Font name="Monospaced Regular" size="40.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="748.0" layoutY="500.0" onMouseClicked="#receptionOnClick" prefHeight="238.0" prefWidth="192.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="34.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Reception_96px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="41.0" layoutY="172.0" text="Reception" textFill="#140bdb">
+                     <font>
+                        <Font name="OpenSymbol" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

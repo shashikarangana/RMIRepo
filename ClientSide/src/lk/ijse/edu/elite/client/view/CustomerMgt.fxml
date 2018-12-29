@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1173.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.CustomerMgtController">
+   <children>
+      <Label layoutX="45.0" layoutY="61.0" text="| Customer Management">
+         <font>
+            <Font name="FreeMono Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerSearch" focusColor="#901f10" labelFloat="true" layoutX="111.0" layoutY="137.0" onAction="#searchChef" prefHeight="26.0" prefWidth="944.0" promptText="Search Customer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerID" disable="true" focusColor="#901f10" labelFloat="true" layoutX="102.0" layoutY="229.0" prefHeight="32.0" prefWidth="205.0" promptText="Customer ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" focusColor="#901f10" labelFloat="true" layoutX="339.0" layoutY="229.0" prefHeight="32.0" prefWidth="450.0" promptText="Customer Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustContact" focusColor="#901f10" labelFloat="true" layoutX="821.0" layoutY="229.0" prefHeight="32.0" prefWidth="255.0" promptText="Contact">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustAddres" focusColor="#901f10" labelFloat="true" layoutX="102.0" layoutY="311.0" prefHeight="32.0" prefWidth="599.0" promptText="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustNIC" focusColor="#901f10" labelFloat="true" layoutX="732.0" layoutY="311.0" prefHeight="32.0" prefWidth="347.0" promptText="NIC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnCancel" layoutX="835.0" layoutY="413.0" onAction="#cancel" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: Gray; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCustomer" layoutX="85.0" layoutY="476.0" onMouseClicked="#tblClicked" prefHeight="200.0" prefWidth="1026.0">
+         <columns>
+            <TableColumn prefWidth="116.0" text="Customer ID" />
+            <TableColumn prefWidth="283.0" text="Customer Name" />
+            <TableColumn prefWidth="135.0" text="Contact" />
+            <TableColumn prefWidth="186.0" text="Address" />
+            <TableColumn prefWidth="154.0" text="NIC" />
+            <TableColumn prefWidth="151.0" text="DOB" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnRemove" layoutX="999.0" layoutY="707.0" onAction="#removeCustomer" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="963.0" layoutY="413.0" onAction="#updateCustomer" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: orange; -fx-background-radius: 40;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtxCustDOB" focusColor="#901f10" labelFloat="true" layoutX="102.0" layoutY="387.0" prefHeight="32.0" prefWidth="347.0" promptText="Date of Birth">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

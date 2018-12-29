@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1010.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.DeliveryController">
+   <children>
+      <Pane prefHeight="105.0" prefWidth="1300.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="36.0" layoutY="-3.0" textFill="#ab0505">
+               <font>
+                  <Font name="Dyuthi" size="54.0" />
+               </font>
+            </Label>
+            <Separator layoutX="352.0" layoutY="16.0" orientation="VERTICAL" prefHeight="79.0" prefWidth="9.0" />
+            <Label layoutX="384.0" layoutY="40.0" prefHeight="25.0" prefWidth="188.0" text="Delivery Area">
+               <font>
+                  <Font name="Monospaced Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtRiderID" focusColor="#901717" labelFloat="true" layoutX="1106.0" layoutY="37.0" prefHeight="32.0" prefWidth="154.0" promptText="Rider ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="lblTime" layoutX="782.0" layoutY="41.0" text="Time">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="915.0" layoutY="41.0" text="Date">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="14.93" radius="6.965" width="14.93" />
+         </effect>
+      </Pane>
+      <Label layoutX="43.0" layoutY="397.0" text="| Customer Info">
+         <font>
+            <Font name="Monospaced Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustID" editable="false" layoutX="204.0" layoutY="444.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="79.0" layoutY="449.0" text="Customer ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustName" editable="false" layoutX="578.0" layoutY="444.0" prefHeight="37.0" prefWidth="326.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="443.0" layoutY="450.0" text="Customer Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" editable="false" layoutX="920.0" layoutY="506.0" prefHeight="32.0" prefWidth="307.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="843.0" layoutY="512.0" text="Conatct :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" editable="false" layoutX="204.0" layoutY="507.0" prefHeight="32.0" prefWidth="454.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="79.0" layoutY="512.0" text="Address :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIC" editable="false" layoutX="998.0" layoutY="443.0" prefHeight="37.0" prefWidth="229.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="944.0" layoutY="449.0" text="NIC :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnGetNewOrder" layoutX="457.0" layoutY="323.0" onAction="#getNewOrder" prefHeight="45.0" prefWidth="403.0" style="-fx-background-color: green; -fx-background-radius: 60;" text="GET NEW ORDER" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="53.0" layoutY="604.0" text="| Order Info">
+         <font>
+            <Font name="Monospaced Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderID" editable="false" layoutX="170.0" layoutY="656.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="80.0" layoutY="662.0" text="Order  ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderDate" editable="false" layoutX="534.0" layoutY="656.0" prefHeight="32.0" prefWidth="251.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="431.0" layoutY="662.0" text="Order  Date :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblFoodOrder" layoutX="63.0" layoutY="714.0" prefHeight="167.0" prefWidth="1166.0">
+        <columns>
+          <TableColumn prefWidth="108.0" text="Food Code" />
+          <TableColumn prefWidth="340.0" text="Food Name" />
+            <TableColumn prefWidth="238.0" text="Catagory" />
+            <TableColumn prefWidth="124.0" text="Qty" />
+            <TableColumn prefWidth="174.0" text="Price" />
+            <TableColumn prefWidth="181.0" text="Total" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtTotalCost" layoutX="1047.0" layoutY="895.0" prefHeight="32.0" prefWidth="182.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="908.0" layoutY="901.0" text="Total Cost :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDeliver" layoutX="457.0" layoutY="932.0" onAction="#orderDelivered" prefHeight="28.0" prefWidth="403.0" style="-fx-background-color: blue; -fx-background-radius: 60;" text="Delivered" textFill="WHITE">
+         <font>
+            <Font name="FreeMono Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtOrderTime" editable="false" layoutX="951.0" layoutY="656.0" prefHeight="32.0" prefWidth="251.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="851.0" layoutY="662.0" text="Order  Time :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAvailableOrders" layoutX="192.0" layoutY="189.0" onMouseClicked="#tblAvailableOnClick" prefHeight="123.0" prefWidth="898.0">
+         <columns>
+            <TableColumn prefWidth="118.00003051757812" text="Order ID" />
+            <TableColumn prefWidth="167.0" text="Order Date" />
+            <TableColumn prefWidth="181.0" text="Order Time" />
+            <TableColumn prefWidth="219.0" text="Price" />
+            <TableColumn prefWidth="212.0" text="Order Status" />
+         </columns>
+      </TableView>
+      <Label layoutX="54.0" layoutY="141.0" text="| Available Orders">
+         <font>
+            <Font name="Monospaced Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="7.0" prefHeight="80.0" prefWidth="179.0" text="Elite" textFill="#ab0505">
+         <font>
+            <Font name="Monospaced Regular" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="69.0" text="Family Restaurant" textFill="#0b02db">
+         <font>
+            <Font name="Yu Gothic Light" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="380.0" prefHeight="3.0" prefWidth="1257.0" />
+      <Separator layoutX="16.0" layoutY="578.0" prefHeight="3.0" prefWidth="1257.0" />
+   </children>
+</AnchorPane>

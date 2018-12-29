@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1173.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.FoodController">
+   <children>
+      <Label layoutX="45.0" layoutY="63.0" text="| Food Management">
+         <font>
+            <Font name="Monospaced Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFoodSearch" focusColor="#901f10" labelFloat="true" layoutX="111.0" layoutY="139.0" onAction="#searchFood" prefHeight="26.0" prefWidth="944.0" promptText="Search Food Item">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFoodCode" disable="true" focusColor="#901f10" labelFloat="true" layoutX="102.0" layoutY="231.0" prefHeight="32.0" prefWidth="205.0" promptText="Food Code">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFoodName" focusColor="#901f10" labelFloat="true" layoutX="339.0" layoutY="231.0" prefHeight="32.0" prefWidth="450.0" promptText="Food Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCategory" focusColor="#901f10" labelFloat="true" layoutX="821.0" layoutY="231.0" prefHeight="32.0" prefWidth="255.0" promptText="Category">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDesc" focusColor="#901f10" labelFloat="true" layoutX="102.0" layoutY="313.0" prefHeight="32.0" prefWidth="599.0" promptText="Description">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" focusColor="#901f10" labelFloat="true" layoutX="732.0" layoutY="313.0" prefHeight="32.0" prefWidth="347.0" promptText="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="963.0" layoutY="415.0" onAction="#saveFood" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="708.0" layoutY="415.0" onAction="#cancel" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: Gray; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblFood" layoutX="85.0" layoutY="478.0" onMouseClicked="#tblOnClick" prefHeight="200.0" prefWidth="1026.0">
+        <columns>
+          <TableColumn prefWidth="116.0" text="Food Code" />
+          <TableColumn prefWidth="283.0" text="Food Name" />
+            <TableColumn prefWidth="214.0" text="Category" />
+            <TableColumn prefWidth="238.0" text="Description" />
+            <TableColumn prefWidth="174.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnRemove" layoutX="999.0" layoutY="698.0" onAction="#removeFood" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="836.0" layoutY="415.0" onAction="#updateFood" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: orange; -fx-background-radius: 40;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

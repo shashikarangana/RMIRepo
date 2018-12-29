@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="431.0" prefWidth="693.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.LoginController">
+   <children>
+      <Pane prefHeight="461.0" prefWidth="299.0" style="-fx-background-color: blue;">
+         <children>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="164.0" prefHeight="43.0" prefWidth="121.0" text="Elite" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="56.0" layoutY="200.0" prefHeight="26.0" prefWidth="188.0" text="Family Restaurant" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="283.0" prefHeight="43.0" prefWidth="173.0" text="Bambalapitiya , Colombo 04" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Text" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="337.0" layoutY="161.0" prefHeight="32.0" prefWidth="325.0" promptText="User Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="337.0" layoutY="257.0" prefHeight="26.0" prefWidth="325.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="431.0" layoutY="350.0" onAction="#login" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="412.0" layoutY="40.0" text="| Admin Login |">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1173.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.ReceptionMgtController">
+   <children>
+      <Label layoutX="47.0" layoutY="63.0" text="| Reception Management">
+         <font>
+            <Font name="FreeMono Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSearchReception" focusColor="#901f10" labelFloat="true" layoutX="104.0" layoutY="139.0" onAction="#searchReception" prefHeight="37.0" prefWidth="981.0" promptText="Search Reception">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRecID" disable="true" focusColor="#901f10" labelFloat="true" layoutX="104.0" layoutY="231.0" prefHeight="32.0" prefWidth="205.0" promptText="Reception ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtResName" focusColor="#901f10" labelFloat="true" layoutX="341.0" layoutY="231.0" prefHeight="32.0" prefWidth="450.0" promptText="Reception Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtResContact" focusColor="#901f10" labelFloat="true" layoutX="823.0" layoutY="231.0" prefHeight="32.0" prefWidth="255.0" promptText="Contact">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtResAddres" focusColor="#901f10" labelFloat="true" layoutX="104.0" layoutY="313.0" prefHeight="32.0" prefWidth="599.0" promptText="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRecNIC" focusColor="#901f10" labelFloat="true" layoutX="734.0" layoutY="313.0" prefHeight="32.0" prefWidth="347.0" promptText="NIC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="965.0" layoutY="415.0" onAction="#saveReception" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: blue; -fx-background-radius: 40;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="710.0" layoutY="415.0" onAction="#cancel" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: Gray; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblReception" layoutX="87.0" layoutY="478.0" onMouseClicked="#tblOnClick" prefHeight="200.0" prefWidth="1026.0">
+         <columns>
+            <TableColumn prefWidth="116.0" text="Rec ID" />
+            <TableColumn prefWidth="283.0" text="Rec Name" />
+            <TableColumn prefWidth="214.0" text="Contact" />
+            <TableColumn prefWidth="238.0" text="Address" />
+            <TableColumn prefWidth="174.0" text="NIC" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnRemove" layoutX="1001.0" layoutY="703.0" onAction="#removeReception" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="838.0" layoutY="415.0" onAction="#updateReception" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

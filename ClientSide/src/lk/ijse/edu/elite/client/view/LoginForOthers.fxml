@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="487.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.LoginForOthersController">
+   <children>
+      <Pane prefHeight="502.0" prefWidth="299.0" style="-fx-background-color: blue;">
+         <children>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="164.0" prefHeight="43.0" prefWidth="121.0" text="Elite" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="56.0" layoutY="200.0" prefHeight="26.0" prefWidth="188.0" text="Family Restaurant" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="283.0" prefHeight="43.0" prefWidth="173.0" text="Bambalapitiya , Colombo 04" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Text" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="334.0" layoutY="279.0" prefHeight="26.0" prefWidth="325.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="424.0" layoutY="359.0" onAction="#login" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="415.0" layoutY="92.0" text="| Other Login |">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbuserType" labelFloat="true" layoutX="334.0" layoutY="192.0" prefHeight="32.0" prefWidth="325.0" promptText="User Type" />
+   </children>
+</AnchorPane>

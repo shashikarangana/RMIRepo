@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1173.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.ChefManagementController">
+   <children>
+      <Label layoutX="56.0" layoutY="51.0" text="| Chef Management">
+         <font>
+            <Font name="FreeMono Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtChefSearch" focusColor="#901f10" labelFloat="true" layoutX="122.0" layoutY="127.0" onAction="#searchChef" prefHeight="26.0" prefWidth="944.0" promptText="Search Chef">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtChefID" disable="true" focusColor="#901f10" labelFloat="true" layoutX="113.0" layoutY="219.0" prefHeight="32.0" prefWidth="205.0" promptText="Chef ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtChefName" focusColor="#901f10" labelFloat="true" layoutX="350.0" layoutY="219.0" prefHeight="32.0" prefWidth="450.0" promptText="Chef Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtChefContact" focusColor="#901f10" labelFloat="true" layoutX="832.0" layoutY="219.0" prefHeight="32.0" prefWidth="255.0" promptText="Contact">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtChefAddres" focusColor="#901f10" labelFloat="true" layoutX="113.0" layoutY="301.0" prefHeight="32.0" prefWidth="599.0" promptText="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtChefNIC" focusColor="#901f10" labelFloat="true" layoutX="743.0" layoutY="301.0" prefHeight="32.0" prefWidth="347.0" promptText="NIC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="974.0" layoutY="403.0" onAction="#saveChef" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="719.0" layoutY="403.0" onAction="#cancel" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: blue; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblChef" layoutX="96.0" layoutY="466.0" onMouseClicked="#tblClicked" prefHeight="200.0" prefWidth="1026.0">
+         <columns>
+            <TableColumn prefWidth="116.0" text="Chef ID" />
+            <TableColumn prefWidth="283.0" text="Chef Name" />
+            <TableColumn prefWidth="214.0" text="Contact" />
+            <TableColumn prefWidth="238.0" text="Address" />
+            <TableColumn prefWidth="174.0" text="NIC" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnRemove" layoutX="1010.0" layoutY="695.0" onAction="#removeChef" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="Remove" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="847.0" layoutY="403.0" onAction="#updateChef" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: orange; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1176.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.ReportsController">
+   <children>
+      <JFXButton fx:id="btnBestD_Boy" layoutX="145.0" layoutY="141.0" onAction="#bestDeliveryBoy" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Best Deliver Boy (This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBestChef" layoutX="145.0" layoutY="238.0" onAction="#bestChef" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Best Chef(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBestReception" layoutX="145.0" layoutY="339.0" onAction="#bestReception" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Best Reception(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBestCustomer" layoutX="145.0" layoutY="454.0" onAction="#bestCustomer" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Best Customer(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTopSellingItem" layoutX="145.0" layoutY="558.0" onAction="#topSellingItem" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Top selling Foods(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCustomerReport" layoutX="145.0" layoutY="666.0" onAction="#customerReport" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Current Customer Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFoodItems" layoutX="677.0" layoutY="141.0" onAction="#foodReport" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Current Food Items" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnChefs" layoutX="677.0" layoutY="238.0" onAction="#chefReport" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Current Chef Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelivery" layoutX="677.0" layoutY="339.0" onAction="#deliveryReport" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Current Delivery" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnHomeDelivery" layoutX="677.0" layoutY="454.0" onAction="#homeDelivery" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Home Deliverys(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTakeAway" layoutX="677.0" layoutY="558.0" onAction="#takeAway" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Take Away(This Month)" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="677.0" layoutY="666.0" prefHeight="48.0" prefWidth="361.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="84.0" layoutY="66.0" text="| Report Area">
+         <font>
+            <Font name="FreeMono Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

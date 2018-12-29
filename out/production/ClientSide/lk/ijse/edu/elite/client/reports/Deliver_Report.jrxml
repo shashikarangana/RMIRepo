@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7561e498-9d8a-40df-a588-3ec7dc7af290">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[Select * from Delivery where deliverID!='B001';]]>
+	</queryString>
+	<field name="deliverID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bike_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="d_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="187" y="0" width="239" height="20" uuid="4a27319d-30b6-4466-9a66-e704192760fd"/>
+				<textElement>
+					<font fontName="Serif" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Current Delivery Riders]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="0" width="296" height="20" uuid="f8b9ca41-773b-4567-a693-6a6bf699c002"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="517701bc-2630-48b9-aab6-3c3d5d5c1bb9"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Deliver_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="0" width="100" height="20" uuid="e6bd4c48-62cf-4099-8b30-4a87bc15544e"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Deliver_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="0" width="95" height="20" uuid="ab51d1a5-6b33-45c5-b520-524d221e7ae3"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Bike_number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="0" width="117" height="20" uuid="617e71e6-3b3b-4492-90f1-2d44f7622f0e"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="0" width="121" height="20" uuid="d5c55d03-0733-43bf-a9bd-9842ae7e2835"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="83" height="20" uuid="476ac5ad-87be-4f65-8940-9af76dab1ff5"/>
+				<textFieldExpression><![CDATA[$F{deliverID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="0" width="100" height="20" uuid="c99fa1df-6c98-479f-b939-c33955270ed0"/>
+				<textFieldExpression><![CDATA[$F{d_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="198" y="0" width="121" height="20" uuid="7dff65ad-f75f-4fb9-a5a1-448271e2bb5e"/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="0" width="95" height="20" uuid="f618974b-8f23-4e9a-8cf0-bedded1e4d76"/>
+				<textFieldExpression><![CDATA[$F{bike_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="0" width="117" height="20" uuid="9acae768-e09e-48a0-9e23-ad84142cb485"/>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="508" y="34" width="47" height="20" uuid="1f5cf7a8-bd28-4b4c-a0ae-95a2654fbfab"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

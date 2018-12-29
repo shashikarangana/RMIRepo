@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="865.0" prefWidth="1708.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.edu.elite.client.controller.ReseptionController">
+   <children>
+      <Pane prefHeight="1020.0" prefWidth="1920.0" style="-fx-background-color: white;">
+         <children>
+            <Separator layoutX="352.0" layoutY="16.0" orientation="VERTICAL" prefHeight="79.0" prefWidth="9.0" />
+            <Label layoutX="384.0" layoutY="40.0" prefHeight="28.0" prefWidth="448.0" text="Reseption Section - Food Orders">
+               <font>
+                  <Font name="Monospaced Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtReceptionID" focusColor="#a40e0e" labelFloat="true" layoutX="1593.0" layoutY="37.0" prefHeight="32.0" prefWidth="223.0" promptText="Reception ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="lblTime" layoutX="1084.0" layoutY="42.0" text="Time">
+               <font>
+                  <Font name="FreeMono Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="1217.0" layoutY="42.0" text="Date">
+               <font>
+                  <Font name="FreeMono Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="7.0" prefHeight="80.0" prefWidth="179.0" text="Elite" textFill="#ab0505">
+               <font>
+                  <Font name="Monospaced Regular" size="54.0" />
+               </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="69.0" text="Family Restaurant" textFill="#0b02db">
+               <font>
+                  <Font name="Yu Gothic Light" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="834.0" layoutY="181.0" text="| Customer Select">
+               <font>
+                  <Font name="Monospaced Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerSearch" focusColor="#a40e0e" labelFloat="true" layoutX="834.0" layoutY="256.0" onAction="#searchCustomer" prefHeight="37.0" prefWidth="974.0" promptText="Search Customer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustID" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="831.0" layoutY="327.0" prefHeight="32.0" prefWidth="159.0" promptText="Customer ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustName" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="1049.0" layoutY="327.0" prefHeight="32.0" prefWidth="448.0" promptText="Customer Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="1558.0" layoutY="327.0" prefHeight="37.0" prefWidth="246.0" promptText="Contact">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNIC" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="831.0" layoutY="399.0" prefHeight="32.0" prefWidth="317.0" promptText="NIC">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="1208.0" layoutY="399.0" prefHeight="32.0" prefWidth="350.0" promptText="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDob" disable="true" focusColor="#a40e0e" labelFloat="true" layoutX="1613.0" layoutY="399.0" prefHeight="37.0" prefWidth="191.0" promptText="Date of Birth">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="831.0" layoutY="579.0" text="| Food Order">
+               <font>
+                  <Font name="Monospaced Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblFoods" layoutX="825.0" layoutY="691.0" prefHeight="127.0" prefWidth="992.0">
+              <columns>
+                <TableColumn prefWidth="105.0" text="Food ID" />
+                <TableColumn prefWidth="298.0" text="Food Name" />
+                  <TableColumn prefWidth="234.0" text="UnitPrice" />
+                  <TableColumn prefWidth="195.0" text="Qty" />
+                  <TableColumn prefWidth="159.0" text="Total" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnAddForCook" layoutX="1658.0" layoutY="897.0" onAction="#addTocook" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: blue; -fx-background-radius: 40;" text="Add for Cook" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancelOrder" layoutX="1540.0" layoutY="899.0" onAction="#cancelOrder" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: gray; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="17.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtOrderID" editable="false" layoutX="966.0" layoutY="630.0" prefHeight="32.0" prefWidth="165.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="868.0" layoutY="637.0" text="Order ID :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtOrderDate" editable="false" layoutX="1257.0" layoutY="630.0" prefHeight="32.0" prefWidth="202.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="1144.0" layoutY="637.0" text="Order Date :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTotal" editable="false" layoutX="1658.0" layoutY="840.0" prefHeight="32.0" prefWidth="159.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="1482.0" layoutY="848.0" text="Total Amount :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnOrderStatus" layoutX="824.0" layoutY="840.0" onAction="#openStatus" prefHeight="38.0" prefWidth="246.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Placed Order Status" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="17.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtOrderTime" editable="false" layoutX="1591.0" layoutY="630.0" prefHeight="32.0" prefWidth="202.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="1478.0" layoutY="637.0" text="Order Time :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="tbtnHomeDelivery" layoutX="1133.0" layoutY="828.0" prefHeight="38.0" prefWidth="180.0" text="Home Delivery">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXToggleButton>
+            <Separator layoutX="736.0" layoutY="507.0" prefHeight="6.0" prefWidth="1136.0" />
+            <Separator layoutX="697.0" layoutY="190.0" orientation="VERTICAL" prefHeight="726.0" prefWidth="0.0" />
+            <TextField fx:id="txtFoodCode" editable="false" layoutX="192.0" layoutY="374.0" prefHeight="26.0" prefWidth="410.0" style="-fx-background-color: white;" text="N/A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="73.0" layoutY="381.0" text="Food Code :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFoodName" editable="false" layoutX="190.0" layoutY="452.0" prefHeight="26.0" prefWidth="410.0" style="-fx-background-color: white;" text="N/A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="71.0" layoutY="459.0" text="Food Name :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCategory" editable="false" layoutX="190.0" layoutY="530.0" prefHeight="26.0" prefWidth="410.0" style="-fx-background-color: white;" text="N/A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="71.0" layoutY="540.0" text="Catagory :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtSearchFood" focusColor="#a40e0e" labelFloat="true" layoutX="73.0" layoutY="274.0" onAction="#searchFood" prefHeight="37.0" prefWidth="547.0" promptText="Search Food Item">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="73.0" layoutY="621.0" text="Description :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtDescription" editable="false" layoutX="192.0" layoutY="610.0" prefHeight="67.0" prefWidth="410.0" style="-fx-background-color: white;" text="N/A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="txtPrice" editable="false" layoutX="190.0" layoutY="693.0" prefHeight="26.0" prefWidth="410.0" style="-fx-background-color: white;" text="N/A">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="71.0" layoutY="703.0" text="Price :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnAddFood" layoutX="499.0" layoutY="868.0" onAction="#addFoodToTable" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: green; -fx-background-radius: 40;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" layoutX="363.0" layoutY="868.0" onAction="#cancel" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="17.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtQty" layoutX="192.0" layoutY="795.0" onAction="#addFoodToTable" prefHeight="26.0" prefWidth="410.0" promptText="Qty">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="73.0" layoutY="805.0" text="Order Qty :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="191.0" text="| Food Item">
+               <font>
+                  <Font name="Monospaced Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="14.93" radius="6.965" width="14.93" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
